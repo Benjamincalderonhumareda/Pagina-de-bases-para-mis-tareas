@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #8cbaf3
+}
+
+header {
+    background: #45bdbd; /* azul mar */
+    color: rgb(28, 37, 46);
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between; /* separa título y botón */
+    text-align-last: justify;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+
+main h2 {
+    margin: 0;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+label {
+    font-weight: bold;
+
+}
+.tuis-p {
+    max-width: 120px;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center; /* centra horizontal */
+    align-items: center;     /* centra vertical */
+    min-height: 100vh;       /* ocupa toda la pantalla */
+}
+
+
+.turis-grid {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;     
+
+    
+}
+
+@media (min-width: 769px) {
+    .turis-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .turis-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.turis-item {
+    text-align: center;
+    
+}
+
+.turis-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; 
+    border-radius: 0; 
+}
+
+.mapa {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.mapa button {
+    background: #0077b6;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+    align-items: center;     
+
+}
+
+.mapa button:hover {
+    background: #023e8a;
+    justify-content: center;
+
+}
+
+.mapa iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 350px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+.menu-icon {
+    font-size: 28px;
+    cursor: pointer;
+}
+
+#menu {
+    position: absolute;
+    left: 40px; /* se abre al costado del botón ☰ */
+    background: white;
+    border: 1px solid #fdfdfd;
+    padding: 0.5rem 1rem;
+    justify-content:flex-start;
+}
+#menu ul {
+    flex-direction: column;;       
+    gap: 1rem;           
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#menu li {
+    margin: 0.5rem 0;
+}
+
+#menu a:hover {
+    color: #000000;
+}
+
+.hidden {
+    display: none;
+}
